@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "97778882869",
+    "project_id": "portsubscriber",
+    "storage_bucket": "portsubscriber.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:97778882869:android:2c53f981b08d2acfeb547c",
+        "android_client_info": {
+          "package_name": "ru.tgnsa.ponlink"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7TndPNZ0yxf0l43dsG1m58jrpuwNXZvw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
