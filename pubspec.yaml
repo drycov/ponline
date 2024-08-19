@@ -43,6 +43,11 @@ dependencies:
   firebase_performance: ^0.10.0+3
   google_maps_flutter: ^2.7.0
   get: ^4.3.8
+  lottie: ^3.1.2
+  google_fonts: ^6.2.1
+  page_transition: ^2.1.0
+  validators: ^3.0.0
+  cloud_firestore: ^5.2.1
 
 dev_dependencies:
   flutter_test:
