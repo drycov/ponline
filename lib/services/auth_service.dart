@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/foundation.dart';
 
 class AuthService {
   final FirebaseAuth _auth = FirebaseAuth.instance;
@@ -13,7 +14,9 @@ class AuthService {
       );
       return userCredential.user;
     } catch (e) {
-      print('Error during sign in: $e');
+      if (kDebugMode) {
+        print('Error during sign in: $e');
+      }
       return null;
     }
   }
@@ -22,7 +25,9 @@ class AuthService {
     try {
       await _auth.signOut();
     } catch (e) {
-      print('Error during sign out: $e');
+      if (kDebugMode) {
+        print('Error during sign out: $e');
+      }
     }
   }
 
@@ -34,7 +39,9 @@ class AuthService {
       List<String> roles = List<String>.from(snapshot['roles']);
       return roles;
     } catch (e) {
-      print('Error fetching user roles: $e');
+      if (kDebugMode) {
+        print('Error fetching user roles: $e');
+      }
       return null;
     }
   }
